@@ -7,7 +7,7 @@ sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf	# Conf
 
 sddm.conf anpassungen:
 Numlock=on
-
+sudo pacman -S --needed sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
 
 
 Es wurde installiert
