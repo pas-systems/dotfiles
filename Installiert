@@ -1,0 +1,49 @@
+Änderungen an nicht Dotfiles:
+/boot/loader/loader.conf
+timeout 0					# Überspring die Betriebssystemsauswahl
+
+sudo mkdir /etc/sddm.conf.d			# Ordner für Config von Loginscreen
+sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf	# Config Datei Copiert
+
+sddm.conf anpassungen:
+Numlock=on
+
+
+
+Es wurde installiert
+fastfetch 					# über sudo pacman -S <paketname> 		
+						// Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily
+						* https://github.com/fastfetch-cli/fastfetch
+base-devel 					# falls benötigt über pacman
+git						# über pacman
+
+Es wurde ein Download Ordner erstellt ins /Home Verzeichnis
+git clone https://aur.archlinux.org/yay.git	# yay als git geclonet ins Download Verzeichnis
+yay						# installiert mit makepkg -si
+google-chrome					# installiert über yay -S <paketname>
+pavucontrol					# installiert über pacman
+						// PulseAudio Volume Control (pavucontrol) is a simple GTK based volume control tool ("mixer")
+						* https://freedesktop.org/software/pulseaudio/pavucontrol/
+stow						# installiert über
+						// GNU Stow is a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem
+						* https://www.gnu.org/software/stow/
+waybar						# installiert über pacman
+						// Highly customizable Wayland bar for Sway and Wlroots based compositors
+						* https://github.com/Alexays/Waybarhttps://github.com/Alexays/Waybar
+getnf						# über pacman
+						// Easily install Nerd Fonts from the terminal / after install -> fc-cache
+						* https://github.com/getnf/getnf
+swww						# über pacman
+						// Wallpaper deamon
+						* https://github.com/LGFae/swww
+waypaper					# über yay
+						// Wallpaper Gui
+						* https://github.com/anufrievroman/waypaper
+networkmanager					# über pacman
+						// NetworkManager configuration for systems to automatically connect to networks.
+						* https://wiki.archlinux.org/title/NetworkManager
+starship					# über pacman
+						// The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+						* https://starship.rs/guide/
+
+sddm-sugar-candy-git				# über yay
