@@ -47,3 +47,7 @@ starship					# über pacman
 						* https://starship.rs/guide/
 
 sddm-sugar-candy-git				# über yay
+
+lazygit						# über pacman
+						// Git Terminal Helper
+						* https://github.com/jesseduffield/lazygit
