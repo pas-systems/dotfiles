@@ -3,12 +3,12 @@
 ## Inhaltsverzeichnis
 
 - [dotfiles](#dotfiles)
-  * [Aenderungen an nicht Dotfiles](#Aenderungen-an-nicht-Dotfiles:)
+  * [Aenderungen an nicht Dotfiles](#Aenderungen-an-nicht-Dotfiles)
   * [Es wurde installiert](#Es-wurde-installiert)
     + [fastfetch](#fastfetch)
     + [base-devel](#base-devel)
 
-## Aenderungen an nicht Dotfiles:
+## Aenderungen an nicht Dotfiles
 
 /boot/loader/loader.conf 
 
