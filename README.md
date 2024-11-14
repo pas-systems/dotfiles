@@ -7,6 +7,19 @@
   * [Es wurde installiert](#Es-wurde-installiert)
     + [fastfetch](#fastfetch)
     + [base-devel](#base-devel)
+    + [git](#git)
+    + [yay](#yay)
+    + [google-chrome](#google-chrome)
+    + [pavucontroll](#pavucontrol)
+    + [stow](#stow)
+    + [waybar](#waybar)
+    + [getnf](#getnf)
+    + [swww](#swww)
+    + [waypaper](#waypaper)
+    + [networkmanager](#networkmanager)
+    + [starship](#starship)
+    + [sugar-candy SDDM Theme](#sugar-candy-SDDM-Theme)
+    + [lazygit](#lazygit)
 
 ## Aenderungen an nicht Dotfiles
 
