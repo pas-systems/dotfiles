@@ -3,6 +3,7 @@
 ## Inhaltsverzeichnis
 
 - [dotfiles](#dotfiles)
+  * [Anleitung](#Anleitung)
   * [Zu Installieren](#Zu-Installieren)
     + [fastfetch](#fastfetch)
     + [base-devel](#base-devel)
@@ -21,32 +22,65 @@
     + [lazygit](#lazygit)
   * [Aenderungen an nicht Dotfiles](#Aenderungen-an-nicht-Dotfiles)
 
-## Aenderungen an nicht Dotfiles
+## Anleitung
 
-/boot/loader/loader.conf 
-
-```
-timeout 0
-```
-
-**Überspring die Betriebssystemsauswahl**
-
-Ordner für Config von Loginscreen
+Schritt 1:
 
 ```
-sudo mkdir /etc/sddm.conf.d
+sudo pacman -Syu
+```
+```
+sudo pacman -S --needed base-devel git stow
+```
+Ausloggen mit: 'super' + 'm'
+
+Ins Terminal gehen mit: 'Crtl' + 'Alt' + 'Fx' [x=2...6] 
+
+Login mit Benutzername und Passwort
+```
+cd dotfiles
+```
+```
+stow .
+```
+```
+reboot
+```
+```
+sudo mkdir ~/Downloads
+```
+```
+git clone https://github.com/pas-systems/dotfiles.git
+```
+```
+cd Downloads
+```
+```
+git clone https://aur.archlinux.org/yay.git
+```
+```
+cd yay
+```
+```
+makepkg -si
 ```
 
-Config Datei Copiert
+Schritt 2:
 
 ```
-sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf
+sudo pacman -S fastfetch pavucontrol waybar getnf getnf networkmanager starship lazygit
+```
+```
+sudo pacman -S --needed sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
+```
+```
+getnf
 ```
 
-sddm.conf anpassungen:
+Schritt 3:
 
 ```
-Numlock=on
+yay -S google-chrome waypaper sddm-sugar-candy-git
 ```
 
 ## Zu Installieren
@@ -174,7 +208,7 @@ https://wiki.archlinux.org/title/NetworkManager
 ### starship
 
 ```
-sudo pacman -S networkmanager
+sudo pacman -S starship
 ```
 
 The minimal, blazing-fast, and infinitely customizable prompt for any shell!
@@ -202,3 +236,32 @@ sudo pacman -S lazygit
 Git Terminal UI
 
 https://github.com/jesseduffield/lazygit
+
+
+## Aenderungen an nicht Dotfiles
+
+/boot/loader/loader.conf 
+
+```
+timeout 0
+```
+
+**Überspring die Betriebssystemsauswahl**
+
+Ordner für Config von Loginscreen
+
+```
+sudo mkdir /etc/sddm.conf.d
+```
+
+Config Datei Copiert
+
+```
+sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf
+```
+
+sddm.conf anpassungen:
+
+```
+Numlock=on
+```
