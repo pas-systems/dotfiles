@@ -3,8 +3,7 @@
 ## Inhaltsverzeichnis
 
 - [dotfiles](#dotfiles)
-  * [Aenderungen an nicht Dotfiles](#Aenderungen-an-nicht-Dotfiles)
-  * [Es wurde installiert](#Es-wurde-installiert)
+  * [Zu Installieren](#Zu-Installieren)
     + [fastfetch](#fastfetch)
     + [base-devel](#base-devel)
     + [git](#git)
@@ -20,6 +19,7 @@
     + [starship](#starship)
     + [sugar-candy SDDM Theme](#sugar-candy-SDDM-Theme)
     + [lazygit](#lazygit)
+  * [Aenderungen an nicht Dotfiles](#Aenderungen-an-nicht-Dotfiles)
 
 ## Aenderungen an nicht Dotfiles
 
@@ -49,7 +49,7 @@ sddm.conf anpassungen:
 Numlock=on
 ```
 
-## Es wurde installiert
+## Zu Installieren
 
 ### fastfetch
 
