@@ -4,6 +4,10 @@
 
 - [dotfiles](#dotfiles)
   * [Anleitung](#Anleitung)
+    + [Schritt 1:](#Schritt-1)
+    + [Schritt 2:](#Schritt-2)
+    + [Schritt 3:](#Schritt-3)
+    + [Schritt X:](#Schritt-X)
   * [Zu Installieren](#Zu-Installieren)
     + [fastfetch](#fastfetch)
     + [base-devel](#base-devel)
@@ -20,12 +24,15 @@
     + [starship](#starship)
     + [sugar-candy SDDM Theme](#sugar-candy-SDDM-Theme)
     + [lazygit](#lazygit)
+    + [neovim](#neovim)
   * [Aenderungen an nicht Dotfiles](#Aenderungen-an-nicht-Dotfiles)
 
 ## Anleitung
 
-Schritt 1:
-
+### Schritt 1:
+```
+sudo pacman -R vim
+```
 ```
 sudo pacman -Syu
 ```
@@ -65,10 +72,10 @@ cd yay
 makepkg -si
 ```
 
-Schritt 2:
+### Schritt 2:
 
 ```
-sudo pacman -S fastfetch pavucontrol waybar getnf getnf networkmanager starship lazygit
+sudo pacman -S fastfetch pavucontrol waybar getnf getnf networkmanager starship lazygit nvim
 ```
 ```
 sudo pacman -S --needed sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
@@ -77,10 +84,39 @@ sudo pacman -S --needed sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
 getnf
 ```
 
-Schritt 3:
+### Schritt 3:
 
 ```
 yay -S google-chrome waypaper sddm-sugar-candy-git
+```
+```
+sudo mkdir /etc/sddm.conf.d
+```
+```
+sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf
+```
+
+### Schritt X:
+
+```
+cd /etc/sddm.conf.d/sddm.conf
+```
+```
+nvim sddm.conf
+```
+
+In der Config sddm.conf folgendes ändern
+
+```
+Numlock=on
+Theme=sugar-candy
+```
+```
+cd /boot/loader/loader.conf 
+```
+nvim loader.conf
+```
+timeout 0
 ```
 
 ## Zu Installieren
@@ -237,6 +273,16 @@ Git Terminal UI
 
 https://github.com/jesseduffield/lazygit
 
+### neovim
+
+```
+sudo pacman -R vim
+sudo pacman -S nvim
+```
+
+Terminal Code Editor
+
+https://neovim.io/
 
 ## Aenderungen an nicht Dotfiles
 
