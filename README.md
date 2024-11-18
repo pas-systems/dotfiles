@@ -1,3 +1,5 @@
+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
+
 # dotfiles
 
 ## Inhaltsverzeichnis
