@@ -29,6 +29,32 @@
 
 ## Anleitung
 
+### Bevor installation
+
+```
+loadkeys de-latin1
+```
+
+Falls WLAN
+```
+iwctl
+station wlan0 connect MeineFamilie
+```
+
+```
+timedatectl
+```
+
+Neuste archinstall hollen für die Installation
+```
+pacman -Sy
+pacman -S git
+git clone https://github.com/archlinux/archinstall.git
+cd archinstall
+python -m archinstall
+```
+
+
 ### Schritt 1:
 ```
 sudo pacman -R vim
