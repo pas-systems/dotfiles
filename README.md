@@ -101,19 +101,19 @@ makepkg -si
 ### Schritt 2:
 
 ```
-sudo pacman -S fastfetch pavucontrol waybar getnf getnf networkmanager starship lazygit nvim
+sudo pacman -S --needed fastfetch pavucontrol waybar networkmanager starship lazygit nvim
 ```
 ```
 sudo pacman -S --needed sddm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg
-```
-```
-getnf
 ```
 
 ### Schritt 3:
 
 ```
-yay -S google-chrome waypaper sddm-sugar-candy-git
+yay -S --needed google-chrome waypaper sddm-sugar-candy-git getnf
+```
+```
+getnf
 ```
 ```
 sudo mkdir /etc/sddm.conf.d
@@ -125,7 +125,7 @@ sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.conf
 ### Schritt X:
 
 ```
-cd /etc/sddm.conf.d/sddm.conf
+cd /etc/sddm.conf.d/
 ```
 ```
 nvim sddm.conf
@@ -138,7 +138,7 @@ Numlock=on
 Theme=sugar-candy
 ```
 ```
-cd /boot/loader/loader.conf 
+cd /boot/loader/
 ```
 nvim loader.conf
 ```
